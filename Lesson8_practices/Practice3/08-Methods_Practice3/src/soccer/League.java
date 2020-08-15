@@ -5,6 +5,8 @@
  */
 package soccer;
 
+
+
 /**
  *
  * @author Administrator
@@ -20,18 +22,10 @@ public class League {
         Game[] theGames = createGames(theTeams);
 
         Game currGame = theGames[0];
-
-        Goal goal1 = new Goal();
-        goal1.thePlayer = currGame.homeTeam.playerArray[2];
-        goal1.theTeam = currGame.homeTeam;
-        goal1.theTime = 55;
-        Goal[] theGoals = {goal1};
-        currGame.goals = theGoals;
-
-        System.out.println("Goal scored after "
-                + currGame.goals[0].theTime + " mins by "
-                + currGame.goals[0].thePlayer.playerName + " of "
-                + currGame.goals[0].theTeam.teamName);
+        
+        currGame.playGame();
+        
+        System.out.println(currGame.getDescription());
 
     }
 
@@ -73,6 +67,3 @@ public class League {
     }
 
 }
-
-
-       
