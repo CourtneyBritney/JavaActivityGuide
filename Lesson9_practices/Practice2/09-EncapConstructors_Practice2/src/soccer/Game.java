@@ -13,12 +13,13 @@ import utility.GameUtils;
  * @author Administrator
  */
 public class Game {
-    
+
     public Game (Team homeTeam, Team awayTeam) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
     }
     
+
     private Team homeTeam;
     private Team awayTeam;
     private Goal[] goals;

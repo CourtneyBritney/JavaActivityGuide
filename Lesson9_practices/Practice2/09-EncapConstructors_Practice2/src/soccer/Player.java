@@ -13,11 +13,13 @@ package soccer;
 public class Player {
     
     private String playerName;
+
     public Player(String playerName) {
         this.playerName = playerName;//It is very important to add the this keyword cause you cannot assign a variable to itself
     //the this keyword comes from the constructor method always.
     }
     public Player() {  }
+
     
     /* Practice 9-2. Add the constructor here */
     

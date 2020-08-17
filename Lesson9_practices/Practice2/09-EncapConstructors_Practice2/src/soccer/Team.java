@@ -14,7 +14,7 @@ public class Team {
     
     private String teamName;
     private Player[] playerArray;
-    
+
     public Team(String teamName) {
         this.teamName = teamName;
     }
@@ -25,6 +25,9 @@ public class Team {
     }
     
     public Team() {}
+
+    /* Practice 9-2. Add the two constructors here */
+
 
     /**
      * @return the teamName
